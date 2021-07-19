@@ -187,6 +187,20 @@ public class LinkedList<E> {
     public E removeFirst() {
         return remove(0);
     }
+    // 从链表中删除元素e
+    public void removeElement(E e){
+        Node prev = dummyHead;
+        while (prev.next != null){
+            if (prev.next.e.equals(e))
+                break;
+            prev = prev.next;
+        }
+        if (prev.next != null){
+            Node delNode = prev.next;
+            prev.next = delNode.next;
+            delNode.next = null;
+        }
+    }
 
     /**
      * 删除链表最后一个元素
@@ -231,29 +245,6 @@ public class LinkedList<E> {
         return res.toString();
     }
 
-    public static void main(String[] args) {
-        LinkedList<Integer> linkedList = new LinkedList<>();
-        for (int i = 0; i < 5; i++) {
-            linkedList.addFirst(i);
-            System.out.println(linkedList);
-        }
-
-        //在索引为2的地方添加元素666
-        linkedList.add(2, 666);
-        System.out.println(linkedList);
-
-        //删除索引为2的元素
-        linkedList.remove(2);
-        System.out.println(linkedList);
-
-        //删除链表第一个元素
-        linkedList.removeFirst();
-        System.out.println(linkedList);
-
-        //删除链表最后一个元素
-        linkedList.removeLast();
-        System.out.println(linkedList);
-    }
 }
 
 
