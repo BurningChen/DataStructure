@@ -2,6 +2,11 @@ package map;
 
 import bst.BST;
 
+/**
+ * 基于二分搜索树映射
+ * @param <K>
+ * @param <V>
+ */
 public class BSTMap<K extends Comparable<K>,V> implements Map<K,V> {
     private class Node{
         public K key;

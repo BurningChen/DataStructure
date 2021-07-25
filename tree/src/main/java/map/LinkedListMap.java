@@ -1,5 +1,10 @@
 package map;
 
+/**
+ * 基于链表的二分搜索树
+ * @param <K>
+ * @param <V>
+ */
 public class LinkedListMap<K, V> implements Map<K, V> {
     private class Node {
         public K key;

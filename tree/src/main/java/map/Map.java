@@ -1,5 +1,6 @@
 package map;
 
+// 映射
 public interface Map<K,V> {
     void add(K key, V value);
     V remove(K key);

@@ -2,6 +2,10 @@ package set;
 
 import linkedlist.LinkedList;
 
+/**
+ * 基于链表的二分搜索树
+ * @param <E>
+ */
 public class LinkedListSet<E> implements Set<E> {
     private LinkedList<E> list;
 
