@@ -12,7 +12,7 @@ public class MaxHeap<E extends Comparable<E>> {
     }
 
     public MaxHeap(E[] arr){
-        data = new Array<>(arr); 
+        data = new Array<>(arr);
     }
 
     public MaxHeap() {
