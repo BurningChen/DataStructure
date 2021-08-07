@@ -1,4 +1,4 @@
-package avl;
+package RedBlackTree;
 
 import map.Map;
 
@@ -9,7 +9,7 @@ import java.util.ArrayList;
  * @param <K>
  * @param <V>
  */
-public class AVLTree<K extends Comparable<K>,V> implements Map<K,V> {
+public class RBTree<K extends Comparable<K>,V> implements Map<K,V> {
     private class Node{
         public K key;
         public V value;
@@ -30,7 +30,7 @@ public class AVLTree<K extends Comparable<K>,V> implements Map<K,V> {
     private Node root;
     private int size;
 
-    public AVLTree(){
+    public RBTree(){
         root = null;
         size = 0;
     }
